@@ -10,9 +10,10 @@ async def get_answers_and_print(request):
     question2 = request.form.get('question2')
     question3 = request.form.get('question3')
     print(username,question1,question2,question3)
+    calculateddata = 1 ## do_something
     return json({
         "status": "success",
-        "data": "deneme"
+        "data": calcuateddata
     })
 
 if __name__ == "__main__":
